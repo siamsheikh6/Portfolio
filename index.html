@@ -39,14 +39,14 @@
                 <img src="images/vector.png" class="vector">
             </div>
             <div class="about-col-2">
-                <h1 class="subtitle">About Me</h1>
+                <h1 class="sub-title">About Me</h1>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
-                <div class="tabtitles">
-                    <p class="tab-links active-link" onclick="opentab(skills)">Skills</p>
-                    <p class="tab-links" onclick="opentab(experience)">Experience</p>
-                    <p class="tab-links" onclick="opentab(education)">Education</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
@@ -73,6 +73,25 @@
     </div>
 </div>
 
+<!-------services--------->
+<div id="services">
+
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                    <p>
+                        `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                    <a href="#">Learn Morhe</a>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
@@ -84,6 +103,8 @@
         for(tabcontent of tabcontents){
             tabcontent.classList.remove("active-tab");
         }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
 
