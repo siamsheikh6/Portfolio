@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siam's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/120da649ab.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -12,11 +13,11 @@
             <nav>
                 <img src="images/logo.png" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -80,18 +81,101 @@
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
             <div>
-                <h2>Web Design</h2>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Game Development</h2>
                     <p>
-                        `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                     </p>
-                    <a href="#">Learn Morhe</a>
+                    <a href="#">Learn More</a>
+                
+            </div>
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2> Android App Development</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                    <a href="#">Learn More</a>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>SoftWare Development</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                    <a href="#">Learn More</a>
                 
             </div>
 
         </div>
     </div>
 </div>
+    
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur ratione illo, distinctio quis excepturi accusamus accusantium atque doloribus esse non at debitis unde voluptates voluptate animi! Saepe, error quasi. </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layer">
+                    <h3>Unreal Engine Game</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur ratione illo, distinctio quis excepturi accusamus accusantium atque doloribus esse non at debitis unde voluptates voluptate animi! Saepe, error quasi. </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg">
+                <div class="layer">
+                    <h3>Photo Editing Software</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur ratione illo, distinctio quis excepturi accusamus accusantium atque doloribus esse non at debitis unde voluptates voluptate animi! Saepe, error quasi. </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
 
+    </div>
+
+    <div id="contact">
+        <div class="container">
+
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>  siamsheikh6@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>  0123435533</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100094487125765"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/siamsheikh6"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.g2g.com/siamsheikh6"><i class="fa-solid fa-store"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
